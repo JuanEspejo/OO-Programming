@@ -12,7 +12,7 @@ public class Pregunta_7_18 {
 	private static final int DOCE = 12;
 	
 	private static final int LANCES = 1000000;	
-	private static final int TAMANHO = 13;
+	private static final int TAMANHO = 21;
 	
 	private static	Scanner entrada = new Scanner(System.in);
  	private static SecureRandom aleatorio = new SecureRandom(); 
