@@ -17,9 +17,9 @@ public class Pregunta_7_18 {
 	private static	Scanner entrada = new Scanner(System.in);
  	private static SecureRandom aleatorio = new SecureRandom(); 
 
-	private static int[] victorias = {0,0,0,0,0,0,0,0,0,0,0,0,0};
-	private static int[] perdidas = {0,0,0,0,0,0,0,0,0,0,0,0,0};
-	private static int[] juegos = new int[13];
+	private static int[] victorias = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+	private static int[] perdidas = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+	private static int[] juegos = new int[22];
  
 	public static void main(String[] args) {
 
@@ -29,7 +29,7 @@ public class Pregunta_7_18 {
 		chancesGanar();
 		duracionMedia();
 		tendenciaGanar();
-   }
+   	}
 
 
 	public static void tendenciaGanar() {
@@ -88,19 +88,19 @@ public class Pregunta_7_18 {
 			switch(lance) {
 		
 				case SIETE:
-   	   	case ONCE: 
-   	   		victorias[tamanho] += 1;
-      			break;
+   	   			case ONCE: 
+   	   				victorias[tamanho] += 1;
+      					break;
 
-      		case DOS:
-   	   	case TRES:
-   	   	case DOCE:
-   	   		perdidas[tamanho] += 1;
-      			break;
+      				case DOS:
+   	   			case TRES:
+   	   			case DOCE:
+   	   				perdidas[tamanho] += 1;
+      					break;
 
-	       	default:
-	      	   miPunto = lance;
-	      	   //System.out.printf("El punto es %d%n", miPunto);
+		       		default:
+		      	   		miPunto = lance;
+	      		   		//System.out.printf("El punto es %d%n", miPunto);
 					while(true) {
 						lance = lanzarDados();
 						tamanho++;
