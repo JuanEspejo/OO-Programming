@@ -55,7 +55,7 @@ public class Pregunta_7_18 {
 			System.out.printf("Juegos ganados con %5d lance(s):%6d%n", 
 			i + 1, victorias[i]); 
 		System.out.printf("Juegos ganados con  >=%2d lance(s):%6d%n", 
-			TAMANHO - 1, victorias[TAMANHO - 1]); 
+			TAMANHO, victorias[TAMANHO - 1]); 
 	}
 	
 	
@@ -64,7 +64,7 @@ public class Pregunta_7_18 {
 			System.out.printf("Juegos perdidos con %4d lance(s):%6d%n", 
 			i + 1, perdidas[i]); 
 		System.out.printf("Juegos perdidos con >=%2d lance(s):%6d%n", 
-			TAMANHO - 1, perdidas[TAMANHO - 1]); 
+			TAMANHO, perdidas[TAMANHO - 1]); 
 	}
 
 	public static void chancesGanar() {
