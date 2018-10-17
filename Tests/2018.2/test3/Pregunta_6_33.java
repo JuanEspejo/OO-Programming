@@ -89,16 +89,16 @@ public class Pregunta_6_33 {
 		switch(lance) {
 		
 			case SIETE:
-   	   case ONCE: 
-   	   	return true;
+   	   		case ONCE: 
+   	   			return true;
       	
-      	case DOS:
-   	   case TRES:
-   	   case DOCE:
-   	   	return false;
+      			case DOS:
+   	   		case TRES:
+   	   		case DOCE:
+   	   			return false;
        	
-       	default:
-      	   miPunto = lance;
+       			default:
+      	   			miPunto = lance;
 				System.out.printf("El punto es %d%n", miPunto);
 				while(true) {
 					lance = lanzarDados();
