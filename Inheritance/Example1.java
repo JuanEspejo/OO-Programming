@@ -5,7 +5,7 @@ public class Example1
         
    	public static void main(String[] args) 
    	{
-	// instantiate CommissionEmployee object
+		// instantiate CommissionEmployee object
       	CommissionEmployee employee = new CommissionEmployee(
          	"Fabio", "Pantoja", "78441202", 10000, .05);      
       
@@ -28,9 +28,8 @@ public class Example1
       
      	System.out.printf("%n%s:%n%n%s%n%n",                                
         	 "Updated employee information obtained by toString", employee);
-   	} // end main
+   	} 
 }     
-
 
 class CommissionEmployee extends Object
 {
