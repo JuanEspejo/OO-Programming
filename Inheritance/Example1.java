@@ -2,9 +2,10 @@
 
 public class Example1 
 {
+    
    	public static void main(String[] args) 
    	{
-	    // instantiate CommissionEmployee object
+	// instantiate CommissionEmployee object
       	CommissionEmployee employee = new CommissionEmployee(
          	"Fabio", "Pantoja", "78441202", 10000, .05);      
       
