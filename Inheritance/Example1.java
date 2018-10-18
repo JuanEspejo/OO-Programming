@@ -29,7 +29,7 @@ public class Example1
         	 "Updated employee information obtained by toString", employee);
    	} 
 }     
-
+ 
 class CommissionEmployee extends Object
 {
    	private final String firstName;                        
