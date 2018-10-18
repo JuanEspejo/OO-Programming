@@ -73,7 +73,6 @@ class BasePlusCommissionEmployee extends CommissionEmployee
    @Override 
    public String toString()
    {
-      // not allowed: attempts to access private superclass members   
       return String.format(
          "%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f%n%s: %.2f", 
          "base-salaried commission employee", firstName, lastName, 
