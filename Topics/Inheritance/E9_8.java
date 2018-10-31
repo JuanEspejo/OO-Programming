@@ -4,42 +4,33 @@ public class E9_8
 {
    public static void main(String[] args) 
    {
-      // instantiate BasePlusCommissionEmployee object
-      BasePlusCommissionEmployee employee = 
-         new BasePlusCommissionEmployee(
-         "Fabio", "Pantoja", "89120054", 10000, .02, 300);
+      // instantiate Trapezoid object
+      Trapezoid trapezoid = new Trapezoid(1,2,3,2,6,0,0,0);
       
-      System.out.printf("%n%s:%n%n%s", 
-         "Employee information", employee.toString());
-		employee.printEarnings();
+      System.out.printf("%s", trapezoid);
 
-      employee.setGrossSales(8000);
-      employee.setCommissionRate(.5);
-      employee.setBaseSalary(1000);
-
-      System.out.printf("%n%s:%n%n%s", 
-         "Updated employee information", employee);
-      employee.printEarnings();
    } 
 } 
 
  
 class Trapezoid extends Quadrilateral
 {
+	public Trapezoid(int x1, int y1, int x2, int y2,
+   	int x3, int y3, int x4, int y4)
+	{
+		super(x1,y1, x2,y2, x3,y3, x4,y4); 
+	}
+	
 	public float area()
 	{
-		return 
+		return geth()*(geta() + getb())/(float) 2;
 	}
 	
    @Override // indicates that this method overrides a superclass method
    public String toString()                                             
    {                                                                    
-      return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f",    
-         "commission employee", getFirstName(), 
-         getLastName(),                    
-         "dni number", getDni(),                
-         "gross sales", getGrossSales(),                                     
-         "commission rate", getCommissionRate());                           
+      return String.format("%s: %s:%5.2f%n%n",    
+         " Trapezoid", " Area", area());                           
    } 	
 }
 
@@ -50,7 +41,7 @@ class Quadrilateral extends Object
    private final Point point3;
    private final Point point4; 
                                 
-   public quadrilateral(int x1, int y1, int x2, int y2,
+   public Quadrilateral(int x1, int y1, int x2, int y2,
    	int x3, int y3, int x4, int y4)
    {                                                                  
       // implicit call to Object constructor occurs here              
@@ -60,6 +51,20 @@ class Quadrilateral extends Object
 		point4 = new Point(x4,y4);
    }        
 
+	public int geta()
+	{
+		return point2.getx() - point1.getx();
+	}
+
+	public int getb()
+	{
+		return point3.getx() - point4.getx();
+	}
+
+	public int geth()
+	{
+		return point1.gety() - point4.gety();
+	}	
 }
 
 class Point extends Object
