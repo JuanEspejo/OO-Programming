@@ -1,7 +1,7 @@
 // Exercise 10.12: Payroll System Modification
 // Employee hierarchy test program.
 
-public class a
+public class E10_12
 {
    public static void main(String[] args) 
    {
@@ -24,18 +24,17 @@ public class a
       for (Employee currentEmployee : employees) 
       {
          System.out.println(currentEmployee); // invokes toString
-         System.out.printf("earned $%,.2f%n%n", 
-         	currentEmployee.earnings());
          // determine whether element is a BasePlusCommissionEmployee
          if (currentEmployee.getBirthMonth() == 11) 
-         {
             System.out.printf(
                "%s, %s%n%s $%,.2f%n%n",
                "since this month is your birthday",
                "u have a bonus of $100.00",
                "so you earned",
                100 + currentEmployee.earnings());
-         } 
+         else
+         	System.out.printf
+         		("earned $%,.2f%n%n", currentEmployee.earnings());
       } 
    }
 }
@@ -329,8 +328,8 @@ abstract class Employee
    @Override
    public String toString()
    {
-      return String.format("%s %s%ndni number: %s", 
-         getFirstName(), getLastName(), getDni());
+      return String.format("%s %s%ndni number: %s%nBirth date: %s", 
+         getFirstName(), getLastName(), getDni(), birthDate);
    } 
 
    // abstract method must be overridden by concrete subclasses
@@ -371,8 +370,7 @@ class Date
       this.day = day;
       this.year = year;
 
-      System.out.printf(
-         "Date object constructor for date %s%n", this);
+      //System.out.printf("Date object constructor for date %s%n", this);
    } 
    
    // return a String of the form month/day/year
