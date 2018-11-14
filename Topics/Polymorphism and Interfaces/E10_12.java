@@ -1,4 +1,4 @@
-// Exercise 10.10: Payroll System Modification
+// Exercise 10.12: Payroll System Modification
 // Employee hierarchy test program.
 
 public class a
