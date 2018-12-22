@@ -227,24 +227,8 @@ public class a
       
       try 
       {
-         System.out.printf("%n%n%s %s %s %s %s %s %s %s %s %s %s %s %s%n", 
-            	input.next(), input.next(), input.next(), input.next(),
-            	input.next(), input.next(), input.next(), input.next(),
-            	input.next(), input.next(), input.next(), input.next(), 
-            	input.next());
-         System.out.printf("%s %s %s %s %s %s %s %s %s %s %s%n", 
-            	input.next(), input.next(), input.next(), input.next(),
-            	input.next(), input.next(), input.next(), input.next(),
-            	input.next(), input.next(), input.next());
-         System.out.printf("%s %s %s %s %s %s %s %s %s %s %s%n", 
-            	input.next(), input.next(), input.next(), input.next(),
-            	input.next(), input.next(), input.next(), input.next(),
-            	input.next(), input.next(), input.next());
-         System.out.printf("%s %s %s %s %s %s %s %s %s %s %s %s %s%n", 
-            	input.next(), input.next(), input.next(), input.next(),
-            	input.next(), input.next(), input.next(), input.next(),
-            	input.next(), input.next(), input.next(), input.next(), 
-            	input.next());         
+			while(input.hasNext())
+         	System.out.println(input.nextLine());
       } 
       catch (NoSuchElementException elementException)
       {
@@ -370,8 +354,6 @@ class Registro implements Serializable
 		return String.format("%s%7.2f", fecha, obtenerTemperatura());		
 	}	
 }
-
-
 class Cientifico extends Profesor
 {
 	private boolean patentes;
@@ -387,14 +369,12 @@ class Cientifico extends Profesor
 	{
 		return patentes;
 	}
-
 	@Override
 	public double obtenerSaldoTotal()
 	{
 		return obtenerSaldo() + (obtenerRegina()?0.25*obtenerSaldo():0) 
 			+ (obtenerPatentes()?1500:0);
 	}
-
 	@Override
 	public String toString()
 	{
@@ -402,8 +382,6 @@ class Cientifico extends Profesor
 			obtenerPatentes()?" Tiene patentes.": "");
 	}				
 }
-
-
 class Ingeniero extends Profesor
 {
 	private boolean patentes;
@@ -421,19 +399,16 @@ class Ingeniero extends Profesor
 	{
 		return patentes;
 	}
-
 	public boolean obtenerConsultorias()
 	{
 		return consultorias;
 	}
-
 	@Override
 	public double obtenerSaldoTotal()
 	{
 		return obtenerSaldo() + (obtenerRegina()?0.25*obtenerSaldo():0) 
 			+ (obtenerPatentes()?1500:0) + (obtenerConsultorias()?1000:0);
 	}
-
 	@Override
 	public String toString()
 	{
@@ -442,8 +417,6 @@ class Ingeniero extends Profesor
 			obtenerConsultorias()?" Hace consultorías.": "");
 	}				
 }
-
-
 class Arquitecto extends Profesor
 {
 	private boolean consultorias;
@@ -459,13 +432,11 @@ class Arquitecto extends Profesor
 	{
 		return consultorias;
 	}
-
 	public double obtenerSaldoTotal()
 	{
 		return obtenerSaldo() + (obtenerRegina()?0.25*obtenerSaldo():0) 
 			+ (obtenerConsultorias()?1000:0);
 	}
-
 	@Override
 	public String toString()
 	{
@@ -473,15 +444,12 @@ class Arquitecto extends Profesor
 			obtenerConsultorias()?" Hace consultorías.": "");
 	}				
 }
-
-
 abstract class Profesor
 {
 	private String nombre;
 	private String codigo;
 	private boolean regina;
 	private final double saldo = 3000;
-
 	public Profesor(String nombre, String codigo, boolean regina)
 	{
 		this.nombre = nombre;
@@ -493,27 +461,22 @@ abstract class Profesor
 	{
 		return nombre;
 	}
-
 	public String obtenerCodigo()
 	{
 		return codigo;
 	}
-
 	public boolean obtenerRegina()
 	{
 		return regina;
 	}
-
 	public double obtenerSaldo()
 	{
 		return saldo;
 	}
-
 	public double obtenerSaldoTotal()
 	{
 		return saldo;
 	}
-
 	@Override
 	public String toString()
 	{
