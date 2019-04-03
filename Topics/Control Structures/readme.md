@@ -1,8 +1,8 @@
 1.- Iteratives <br />
-2.- LetterGrades\\
-#3.- AutoPolicyTest
-4.- BreakContinue
-5.- Randomness
-6.- Craps
-7.- ScopeOverload
-8.- Array
+2.- LetterGrades<br />
+3.- AutoPolicyTest<br />
+4.- BreakContinue<br />
+5.- Randomness<br />
+6.- Craps<br />
+7.- ScopeOverload<br />
+8.- Array<br />
