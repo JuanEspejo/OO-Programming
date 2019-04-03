@@ -1,4 +1,5 @@
 // Programa que muestra el uso de las tres instrucciones iterativas de Java
+//import static java.lang.Math.*;
 
 public class Iteratives
 
