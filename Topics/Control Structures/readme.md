@@ -1,6 +1,6 @@
-1.- Iteratives
-2.- LetterGrades
-3.- AutoPolicyTest
+#1.- Iteratives
+#2.- LetterGrades
+#3.- AutoPolicyTest
 4.- BreakContinue
 5.- Randomness
 6.- Craps
