@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class navi {
+public class Christmas {
   public static void main(String[] args) {
 
     String [] dias =
