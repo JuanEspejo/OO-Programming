@@ -6,5 +6,5 @@
  6.- Craps<br />
  7.- ScopeOverload<br />
  8.- Array<br />
-<p>9.- FrequencyException<br/>
+ 9.- FrequencyException<br/>
 10.- a
