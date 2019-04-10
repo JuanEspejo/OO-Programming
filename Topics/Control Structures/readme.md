@@ -7,4 +7,10 @@
  7.- ScopeOverload<br />
  8.- Array<br />
  9.- FrequencyException<br/>
-10.- a
+10.- DeckOfCardsTest<br />
+11.- PassArray<br />
+12.- GradeBookTest<br />
+13.- GradeBookTest2<br />
+14.- VariableLengthCommandLine<br />
+15.- ArrayManipulations<br />
+16.- ArrayListCollection<br />
