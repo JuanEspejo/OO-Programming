@@ -4,7 +4,7 @@ public class ArrayListCollection {
 
    public static void main(String[] args) {
       // create a new ArrayList of Strings with an initial capacity of 10
-      ArrayList<String> items = new ArrayList<String>(); 
+      ArrayList<String> items = new ArrayList<String>(10); 
 
       items.add("red"); // append an item to the list          
       items.add(0, "yellow"); // insert "yellow" at index 0
