@@ -9,7 +9,7 @@ public class ArrayManipulations {
       System.out.printf("%ndoubleArray: ");
 
       for (double value : doubleArray)
-         System.out.printf("%.1f ", value);
+         System.out.printf("%6.1f ", value);
 
       // fill 10-element array with 7s
       int[] filledIntArray = new int[10]; 
@@ -56,6 +56,6 @@ public class ArrayManipulations {
    public static void displayArray(int[] array, String description) {     
       System.out.printf("%n%s: ", description);
       for (int value : array)
-         System.out.printf("%d ", value);
+         System.out.printf("%4d", value);
    } 
 }
