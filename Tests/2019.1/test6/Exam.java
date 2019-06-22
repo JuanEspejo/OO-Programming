@@ -67,18 +67,9 @@ class SpellingChecker {
         return auxStr.toString();
     }
 
-    private static String doubleLetter(String str, int k) {
-        StringBuilder auxStr = new StringBuilder(str.length() + 1);
-        for (int j = 0; j < str.length(); j++) {
-            if (j < k)
-                auxStr.append(str.charAt(j));
-            if (j == k) {
-                auxStr.append(str.charAt(j));
-                auxStr.append(str.charAt(j));
-            }
-            if (j > k)
-                auxStr.append(str.charAt(j));
-        }
+	private static String doubleLetter(String str, int k) {
+        StringBuilder auxStr = new StringBuilder(str);
+        auxStr.insert(k + 1, str.charAt(k));
         return auxStr.toString();
     }
 }
